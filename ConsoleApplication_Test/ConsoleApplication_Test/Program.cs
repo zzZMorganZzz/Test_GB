@@ -25,7 +25,7 @@ namespace ConsoleApplication_Test
             Console.Write("Слова длинной {0} символа:", Len);
 
             string rep = string.Join(", ", _repo);
-            string rez = string.Join(", ", _repo.Where(item=>item.Length==Len));
+            string rez = string.Join(", ", _repo.Where(item=>item.Length<=Len));
             Console.WriteLine(string.Format("[{0}] => [{1}]", rep, rez));
             Console.ReadLine();            
         }
