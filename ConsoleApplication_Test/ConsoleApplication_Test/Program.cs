@@ -27,10 +27,7 @@ namespace ConsoleApplication_Test
             string rep = string.Join(", ", _repo);
             string rez = string.Join(", ", _repo.Where(item=>item.Length==Len));
             Console.WriteLine(string.Format("[{0}] => [{1}]", rep, rez));
-            Console.ReadLine();
-
-
-            
+            Console.ReadLine();            
         }
 
         static bool FillList(string value)
@@ -42,19 +39,6 @@ namespace ConsoleApplication_Test
             }
             return false; 
         }
-
-        //static List<string> GetItem()
-        //{
-        //    List<string> _rezult = new List<string>();
-        //    foreach (string item in _repo)
-        //    {
-        //        if (item.Length == Len)
-        //        {
-        //            _rezult.Add(item);
-        //        }
-        //    }
-        //    return _rezult;
-        //}
-
+         
     }
 }
